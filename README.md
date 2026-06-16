@@ -1,4 +1,4 @@
-# Web Development Project 2 - English → Spanish Flashcards
+# Web Development Project 2 - English to Spanish Flashcards
 
 Submitted by: **Hiyall Fitsum**
 
