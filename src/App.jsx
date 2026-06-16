@@ -31,11 +31,6 @@ export default function App() {
     setIsFlipped(false);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
-    setIsFlipped(false);
-  };
-
   return (
     <div className="app">
       <header className="app-header">
@@ -51,10 +46,7 @@ export default function App() {
           isFlipped={isFlipped}
           onFlip={() => setIsFlipped((prev) => !prev)}
         />
-        <div className="buttons">
-          <button className="nav-btn" onClick={handlePrev}>Back</button>
-          <button className="next-btn" onClick={handleNext}>Next</button>
-        </div>
+        <button className="next-btn" onClick={handleNext}>Next</button>
       </main>
     </div>
   );
